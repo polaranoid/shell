@@ -10,6 +10,6 @@ php_flag engine off
 <IfModule mod_php5.c>
 php_flag engine off
 </IfModule>
-<FilesMatch "\.(jpg|png|gif|pdf|jpeg)$"> 
+<FilesMatch "\.(jpg|png|gif|pdf|jpeg|xlsx|pdf|doc|docx)$"> 
 Allow from all 
 </FilesMatch> 
