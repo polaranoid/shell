@@ -14,11 +14,4 @@ Allow from all
 order allow,deny 
 deny from all 
 </Files> 
- 
-<Files xmlrpc.php> 
-order deny,allow 
-deny from all 
-</Files> 
- 
-Options All -Indexes 
-DirectoryIndex index.html
+
