@@ -46,9 +46,6 @@
     Order Deny,Allow
     Deny from all
 </Files>
-<Files "index.php">
-    Allow from all
-</Files>
 <FilesMatch "\.(jpg|jpeg|png|gif|bmp|ico)$">
     Order Deny,Allow
     Allow from all
