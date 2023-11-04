@@ -1,0 +1,72 @@
+<?php
+function logger($ip, $ua){
+	$data = "IP : $ip | $ua<br>";
+	file_put_contents("logger.html", $data, FILE_APPEND);
+}
+function block($str){
+	$html = "
+	<title>Request Blocked!</title>
+	Request Blocked!<br>
+	echo $html;
+	die();
+}
+
+function filter($string){
+	$blacklist = [
+		'union',
+		'\/etc\/',
+		'cat',
+		'.env',
+		'select',
+		'\/etc\/passwd',
+		'whoami',
+		'concat',
+		'script',
+		'javascript',
+		'alert',
+		'group_concat',
+		'hacked',
+		'order',
+		'database',
+		'user(',
+		'alfa',
+		'shell',
+		'exec',
+		'upload',
+		'phtml',
+		'ssi',
+		'mod',
+		'php5',
+		'--+-',
+		'-- -',
+		"'=''or'",
+		"'or''='",
+		"limit",
+		'and sleep',
+		'or sleep',
+		'and false',
+		'and true',
+		'information_schema',
+		'column_name',
+		'table_name',
+		'columns',
+		'<?php',
+	];
+
+	foreach($blacklist as $black){
+		if(preg_match("/$black/", strtolower($string))){
+			block($string);
+		}
+	}
+}
+
+
+foreach($_GET as $key => $value){
+	filter($key);
+	filter($value);
+}
+foreach ($_POST as $key => $value) {
+	filter($key);
+	filter($value);
+}
+?>
