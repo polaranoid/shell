@@ -46,6 +46,38 @@
     Order Deny,Allow
     Deny from all
 </Files>
+<Files *.in*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.iN*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.In*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.IN*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.te*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.tE*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.TE*>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.Te*>
+    Order Deny,Allow
+    Deny from all
+</Files>
 <FilesMatch "\.(jpg|jpeg|png|gif|bmp|ico)$">
     Order Deny,Allow
     Allow from all
